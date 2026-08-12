@@ -130,6 +130,12 @@ b77f2fd Mickey Blueyes  2023-11-13      moved Dockerfile to root
 git filter-repo --force --mailmap ../mailmap | tee ../some_repo_author_fix.log
 ```
 
+Alternatively, run a `uvx` one-shot:
+
+```sh
+uvx git-filter-repo --force --mailmap ../mailmap | tee ../some_repo_author_fix.log
+```
+
 ```text
 Parsed 19 commitsHEAD is now at 167a3bc Some commit message here
 Enumerating objects: 74, done.
